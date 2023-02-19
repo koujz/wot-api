@@ -1,5 +1,6 @@
 fetch('https://api.worldoftanks.asia/wot/clans/info/?application_id=b4201b463f60efce04a102e3dc549e2d&clan_id=2000006094')
-  .then(response => response.json())
+  .then(response => {response.json()
+    console.log(response)})
   .then(data => {
     const clan = data.data[2000006094];
 
